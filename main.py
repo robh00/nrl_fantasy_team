@@ -18,7 +18,7 @@ def main():
     
 def writeToFile(data):
     headers=["ID","Player","Team","Position","Status","Price","SeasonPriceChange","PriceChangeLastRD","RdsPlayed","SelectBy","Projection","FormLast3Rds","$/Points","PointsCurrRd","TotalPoints"]
-    with open("C:\\Users\\rob_h\\Documents\\workspace\\nrlFantasy\\csv files\\nrlFantasyRd2.csv", "w", newline="") as f:
+    with open("C:\\temp\\nrlFantasyRd1.csv", "w", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(headers)
         writer.writerows(data)
