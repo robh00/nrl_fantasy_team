@@ -4,7 +4,7 @@ import csv
 
 print ("======== Process Start ========")   
 #Here we read the data into a pandas dataframe.
-df=pd.read_csv("C:\\Users\\rob_h\\Documents\\workspace\\nrlFantasy\\csv files\\nrlFantasyRd2.csv")
+df=pd.read_csv("C:\\temp\\nrlFantasyRd1.csv")
 
 df=df.drop(["ID"],axis = 1) #drop the id column
 df["Position"]=df['Position'].str[:3]
@@ -20,7 +20,7 @@ df["CTR"] = (df["Position"] == 'CTR').astype(float)
 df["WFB"] = (df["Position"] == 'WFB').astype(float)
 df["Price"] = df["Price"].astype(float)
 df["Available"]= (df["Status"] != 'playing').astype(float)
-df.to_csv("C:\\Users\\rob_h\\Documents\\workspace\\nrlFantasy\\csv files\\nrlFantasyRd2Reformat.csv")
+df.to_csv("C:\\temp\\nrlFantasyRd2Reformat.csv")
 
 print(df)
 print ("======== Process Complete ========")
