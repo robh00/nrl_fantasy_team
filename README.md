@@ -11,6 +11,9 @@ Requirements
 1) selenium
 2) BeautifulSoup
 3) geckodriver-v0.26.0-win64
+4) pandas
+5) numpy
+6) pulp
 
 Process
 1) In main.py need to update "insert directory and file name.csv"
