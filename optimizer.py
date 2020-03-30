@@ -5,7 +5,7 @@ import csv
 
 print ("======== Process Start ========")   
 #Here we read the data into a pandas dataframe.
-players=(pd.read_csv("C:\\Users\\rob_h\\Documents\\workspace\\nrlFantasy\\csv files\\nrlFantasyRd2Reformat.csv"))
+players=(pd.read_csv("C:\\temp\\nrlFantasyRd2Reformat.csv"))
 print(players)
 #itialize the optimization model
 model = LpProblem("NRL", LpMaximize)
@@ -88,7 +88,7 @@ my_team = players[players["is_drafted"] == 1.0]
 my_team = my_team[["Player","Team","Position","Price","SeasonPriceChange","PriceChangeLastRD","RdsPlayed","SelectBy","Projection","FormLast3Rds","$/Points","PointsCurrRd","TotalPoints","Available","is_drafted"]]
     
 print(my_team)
-my_team.to_csv("C:\\Users\\rob_h\\Documents\\workspace\\nrlFantasy\\csv files\\is_draftedRd1.csv")
+my_team.to_csv("C:\\temp\\is_draftedRd1.csv")
    
            
    
